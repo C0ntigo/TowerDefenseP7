@@ -14,14 +14,5 @@ public class Hurting : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void UpdateLives(int livesToChange)
-    {
-        lives += livesToChange;
-        livesText.text = "Lives: " + lives;
-        if (lives <= 0) 
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-        }
-    }
+    
 }
