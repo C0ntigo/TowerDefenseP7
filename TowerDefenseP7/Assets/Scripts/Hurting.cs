@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Hurting : MonoBehaviour
 {
@@ -23,5 +24,4 @@ public class Hurting : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
     }
-    public void Start
 }
