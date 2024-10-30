@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Follower : MonoBehaviour
 {
+    public Transform startPoint;
+    public Sprite[] path;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         
     }
