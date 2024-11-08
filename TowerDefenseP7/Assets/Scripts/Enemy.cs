@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public float speed = 5.0f;
     private Transform Target;
-    private int philindex;
+    private int markerindex;
 
     // Start is called before the first frame update
     void Start()
@@ -27,12 +27,12 @@ public class Enemy : MonoBehaviour
     }
     void GetNextMaker() 
     {
-        if (philindex >= Makers.Phil.Length - 1)
+        if (markerindex >= Makers.Phil.Length - 1)
         {
             Destroy(gameObject);
             return;
         }
-        philindex++;
-        Target = Makers.Phil[philindex];
+        markerindex++;
+        Target = Makers.Phil[markerindex];
     }
 }
