@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6555612421552003210}
   - component: {fileID: 6038354449034089106}
   - component: {fileID: 3432358844716622669}
+  - component: {fileID: 6499019332290760272}
   m_Layer: 0
   m_Name: EvilOnion1
   m_TagString: Untagged
@@ -98,3 +99,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &6499019332290760272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857370310783112558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3941b68dbddc20546a3c065fb53520f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10

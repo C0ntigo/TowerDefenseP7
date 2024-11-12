@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public Rigidbody2D onionRB;
     public float speed = 5.0f;
     private Transform Target;
     private int markerindex;
@@ -29,7 +30,7 @@ public class Enemy : MonoBehaviour
     {
         if (markerindex >= Makers.Phil.Length - 1)
         {
-            Destroy(gameObject);
+            
             return;
         }
         markerindex++;
