@@ -11,6 +11,7 @@ public class OnionDMG : MonoBehaviour
         if (collision.gameObject.GetComponent<Hurting>())
         {
             collision.gameObject.GetComponent<Hurting>().health -= damage;
+            Debug.Log("ITS DAMAGING IT!!");
         }
     }
 }

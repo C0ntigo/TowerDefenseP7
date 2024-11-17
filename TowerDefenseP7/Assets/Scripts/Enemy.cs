@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public float speed = 5.0f;
     private Transform Target;
     private int markerindex;
-
+    public int damage = 25;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,4 +36,11 @@ public class Enemy : MonoBehaviour
         markerindex++;
         Target = Makers.Phil[markerindex];
     }
+
+    void EndPath()
+    {
+        Playerlives.Lives--;
+    }
+
+
 }
