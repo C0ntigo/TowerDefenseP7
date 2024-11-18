@@ -6,11 +6,11 @@ using TMPro;
 
 public class Livestext : MonoBehaviour
 {
-    public TextMeshPro livesText;
+    public TextMeshProUGUI livesText;
 
 
     void Update ()
     {
-        livesText.text = Playerlives.Lives.ToString() + " Lives: ";
+        livesText.text = Playerlives.Lives.ToString() + " Lives ";
     }
 }

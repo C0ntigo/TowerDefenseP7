@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal.Profiling.Memory.Experimental.FileFormat;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -7,6 +8,7 @@ public class Enemy : MonoBehaviour
     public Rigidbody2D onionRB;
     public float speed = 5.0f;
     private Transform Target;
+    public EnemyType enemyType;
     private int markerindex;
     public int damage = 25;
     // Start is called before the first frame update
@@ -15,6 +17,7 @@ public class Enemy : MonoBehaviour
         Target = Makers.Phil[0];
     }
 
+   
     // Update is called once per frame
     void Update()
     {
@@ -30,7 +33,7 @@ public class Enemy : MonoBehaviour
     {
         if (markerindex >= Makers.Phil.Length - 1)
         {
-            
+            EndPath();
             return;
         }
         markerindex++;
@@ -39,8 +42,26 @@ public class Enemy : MonoBehaviour
 
     void EndPath()
     {
+        Destroy(gameObject);
         Playerlives.Lives--;
     }
-
+    private void SetDamageBasedOnType()
+    {
+        switch (enemyType)
+        {
+            case EnemyType.Weak:
+                damage = 10; // Weak enemy damage
+                break;
+            case EnemyType.Strong:
+                damage = 50; // Strong enemy damage
+                break;
+            case EnemyType.Boss:
+                damage = 100; // Boss enemy damage
+                break;
+            default:
+                damage = 25; // Default damage for unassigned types
+                break;
+        }
+    }
 
 }
