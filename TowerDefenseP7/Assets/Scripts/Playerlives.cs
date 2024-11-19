@@ -8,7 +8,7 @@ public class Playerlives : MonoBehaviour
     public int startMoney = 20;
 
     public static int Lives;
-    public int startLives = 150;
+    public int startLives = 2;
     // Start is called before the first frame update
     void Start()
     {

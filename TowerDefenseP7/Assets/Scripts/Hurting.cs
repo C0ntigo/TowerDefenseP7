@@ -5,7 +5,7 @@ using UnityEngine;
 public class Hurting : MonoBehaviour
 {
     public int health;
-    public int maxHealth = 150;
+    public int maxHealth = 2;
 
     // Start is called before the first frame update
     void Start()

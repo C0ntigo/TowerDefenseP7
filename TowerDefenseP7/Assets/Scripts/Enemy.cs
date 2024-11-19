@@ -43,25 +43,25 @@ public class Enemy : MonoBehaviour
     void EndPath()
     {
         Destroy(gameObject);
-        Playerlives.Lives--;
+        Playerlives.Lives = Playerlives.Lives - damage;
     }
-    private void SetDamageBasedOnType()
-    {
-        switch (enemyType)
-        {
-            case EnemyType.Weak:
-                damage = 10; // Weak enemy damage
-                break;
-            case EnemyType.Strong:
-                damage = 50; // Strong enemy damage
-                break;
-            case EnemyType.Boss:
-                damage = 100; // Boss enemy damage
-                break;
-            default:
-                damage = 25; // Default damage for unassigned types
-                break;
-        }
-    }
+   // private void SetDamageBasedOnType()
+    //{
+       // switch (enemyType)
+        //{
+          //  case EnemyType.Weak:
+           //     damage = 0; 
+          //      break;
+          //  case EnemyType.Strong:
+          //      damage = 25; 
+          //      break;
+          //  case EnemyType.Boss:
+          //      damage = 150; 
+          //      break;
+          //  default:
+           //     damage = 15; 
+           //     break;
+       // }
+  //  }
 
 }
