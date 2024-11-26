@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5990021449629681111}
   m_Layer: 0
   m_Name: BigEvilOnion2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d915b53a719a6d4fb776e64f6961c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onionRB: {fileID: 0}
   speed: 7
+  enemyType: {fileID: 0}
+  damage: 25
 --- !u!114 &-5990021449629681111
 MonoBehaviour:
   m_ObjectHideFlags: 0

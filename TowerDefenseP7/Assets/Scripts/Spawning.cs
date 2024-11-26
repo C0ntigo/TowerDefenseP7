@@ -32,7 +32,7 @@ public class Spawning : MonoBehaviour
         }
         if (!spawning && enemies > 0)
         {
-            StarCourtaine(SpawnOnions());
+            SpawnOnions();
         }
         if (waveUI && Input.GetKeyDown(KeyCode.Space))
         {
@@ -41,13 +41,14 @@ public class Spawning : MonoBehaviour
     }
     // Update is called once per frame
 
-    void SpawnOnions()
+     void SpawnOnions()
     {
         spawning = true;
         if (enemies > 0) 
         {
             Instantiate(Onions[Random.Range(0, Onions.Length)], SpawnPos, transform.rotation);
         }
+        
     }
     public void waveStart() 
     

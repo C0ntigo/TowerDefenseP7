@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e3b891bc6343c3f41aae9b0dc84cfd63
+guid: a1528a750f8be4f459b5da3deddbfa4d
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Sprite-0003
+  - name: Tom
     originalName: 
     pivot: {x: 0.49999997, y: -0.17073171}
     alignment: 9
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 106
       height: 82
-    spriteID: d0e71738cad0d0b449d302196f0f9f63
+    spriteID: b47ada6eea420ef4fa5b4e50a7b343f0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,13 +142,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -572920417
-    name: Sprite-0003
+    guid: -468261290
+    name: Tom
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Sprite-0003
+    - name: Tom
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -156,7 +156,7 @@ ScriptedImporter:
         y: 14
         width: 106
         height: 82
-      spriteId: d0e71738cad0d0b449d302196f0f9f63
+      spriteId: b47ada6eea420ef4fa5b4e50a7b343f0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
