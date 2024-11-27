@@ -7,9 +7,15 @@ public class RaccoonTurrent : MonoBehaviour
     public Transform target;
     public float range = 15f;
 
-
+    [Header("Attributes")]
+    public float fireRate = 1f;
+    private float firecountdown = 0f;
     public string enemyTag = "Enemy";
 
+    [Header("Unity Setup Fields")]
+
+    public GameObject bulletPrefab;
+    public Transform firePoint;
     public Transform partToRotate;
     // Start is called before the first frame update
     void Start()
@@ -53,7 +59,21 @@ public class RaccoonTurrent : MonoBehaviour
         Vector2 rotation = lookRotation.eulerAngles;
         partToRotate.rotation = Quaternion.Euler (0f, rotation.x, 0f);
 
+        if (firecountdown <= 0f)
+        {
+            Shoot();
+            firecountdown = 1f / fireRate;
 
+        }
+
+        firecountdown -= Time.deltaTime;
+
+    }
+
+    void Shoot()
+    {
+        
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
     private void OnDrawGizmosSelected()
     {
