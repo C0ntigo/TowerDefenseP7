@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOVer.unity
     guid: f23ce0b748f557d42ac9e0a5b9028063
+  - enabled: 1
+    path: Assets/Scenes/INSANESCENE.unity
+    guid: 743b8decc8cfade48a36255b27cd44ca
   m_configObjects: {}
