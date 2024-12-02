@@ -33,7 +33,7 @@ public class Bullet : MonoBehaviour
             HitTarget();
             return;
         }
-
+        transform.Translate(dir.normalized * distanceThisFrame, Space.World);
        
     }
 
@@ -43,6 +43,6 @@ public class Bullet : MonoBehaviour
     }
     void HitTarget ()
     {
-        Debug.Log("Andrew sucks at Fortnite");
+        Debug.Log("shoot");
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public int health = 3;
     public Rigidbody2D onionRB;
     public float speed = 5.0f;
     private Transform Target;
@@ -12,6 +13,8 @@ public class Enemy : MonoBehaviour
     private int markerindex;
     public int damage = 25;
     // Start is called before the first frame update
+
+   
     void Start()
     {
         Target = Makers.Phil[0];
@@ -45,23 +48,18 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
         Playerlives.Lives = Playerlives.Lives - damage;
     }
-   // private void SetDamageBasedOnType()
-    //{
-       // switch (enemyType)
-        //{
-          //  case EnemyType.Weak:
-           //     damage = 0; 
-          //      break;
-          //  case EnemyType.Strong:
-          //      damage = 25; 
-          //      break;
-          //  case EnemyType.Boss:
-          //      damage = 150; 
-          //      break;
-          //  default:
-           //     damage = 15; 
-           //     break;
-       // }
-  //  }
+   public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health < 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
+    }
 
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RaccoonTurrent : MonoBehaviour
 {
+   
     public Transform target;
     public float range = 15f;
 
@@ -16,7 +17,7 @@ public class RaccoonTurrent : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Transform firePoint;
-    public Transform partToRotate;
+   // public Transform partToRotate;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,7 +58,7 @@ public class RaccoonTurrent : MonoBehaviour
         Vector2 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector2 rotation = lookRotation.eulerAngles;
-        partToRotate.rotation = Quaternion.Euler (0f, rotation.x, 0f);
+        //partToRotate.rotation = Quaternion.Euler (0f, rotation.x, 0f);
 
         if (firecountdown <= 0f)
         {
@@ -80,4 +81,5 @@ public class RaccoonTurrent : MonoBehaviour
         Gizmos.color = Color.gray;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+   
 }
