@@ -8,53 +8,65 @@ public class Spawning : MonoBehaviour
 
     private int enemies = 0;
     private int Wave = 0;
-    private bool waveUI;
+    private bool waveUI = true;
     private bool spawning = false;
     public GameObject[] Onions;
     public int OnionIndex;
     private Vector2 SpawnPos = new Vector2(-5f, -2.5f);
     private float startDelay = 1;
     private float repeatRate = 1;
-   
+    public float midtime = 0.5f;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnOnions", startDelay, repeatRate);
+        
     }
     void Update()
     {
         OnionsLeft = FindObjectsOfType<Enemy>().Length;
-        if (waveUI && OnionsLeft == 0 && enemies == 0)
+        Debug.Log("OnionsLefft: " + OnionsLeft);
+        if (!waveUI && OnionsLeft == 0 && enemies == 0)
         {
             waveUI = true;
             Wave++;
         }
         if (!spawning && enemies > 0)
         {
-            SpawnOnions();
+            StartCoroutine(SpawnOnions());
         }
         if (waveUI && Input.GetKeyDown(KeyCode.Space))
         {
-            waveStart();
+            Debug.Log("wave: " + Wave);
+            enemies = 2 + Wave;
+
+            waveUI = false;
         }
     }
     // Update is called once per frame
 
-     void SpawnOnions()
+     System.Collections.IEnumerator SpawnOnions()
     {
         spawning = true;
         if (enemies > 0) 
         {
             Instantiate(Onions[Random.Range(0, Onions.Length)], SpawnPos, transform.rotation);
+            enemies--;
+            Debug.Log(enemies);
+            
         }
+        if (enemies > 0)
+        {
+            yield return new WaitForSeconds(midtime);
+        }
+        else 
+        {
+           spawning = false;
+            yield break;
+
+        }
+        spawning = false;
         
     }
-    public void waveStart() 
     
-    {
-
-        enemies = 2000 + Wave;
-        waveUI = false;
-    }
 }

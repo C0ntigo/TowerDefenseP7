@@ -11,18 +11,18 @@ public class Node : MonoBehaviour
 
     public GameObject tower;
 
-    BuildManager buildManager;
+    //BuildManager buildManager;
      void Start()
     {
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
 
-        buildManager = BuildManager.instance;
-    }
-    public Vector2 GetBuildPosition ()
-    {
-        return transform.position + positionOffset;
-    }
+      //  buildManager = BuildManager.instance;
+  }
+   // public  GetBuildPosition ()
+ //   {
+       // return transform.position + positionOffset;
+  //  }
     void OnMouseEnter()
     {
         rend.material.color = hoverColor;

@@ -11,11 +11,11 @@ public class Shop : MonoBehaviour
     public TowerPlan LRT;
     public TowerPlan PRT;
 
-    BuildManager BM;
+   // BuildManager BM;
 
      void Start()
     {
-        BM = BuildManager.instance;    
+      //  BM = BuildManager.instance;    
     }
     public void PurchaseStandardTower ()
     {
