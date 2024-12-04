@@ -25,7 +25,7 @@ public class Spawning : MonoBehaviour
     void Update()
     {
         OnionsLeft = FindObjectsOfType<Enemy>().Length;
-        Debug.Log("OnionsLefft: " + OnionsLeft);
+        
         if (!waveUI && OnionsLeft == 0 && enemies == 0)
         {
             waveUI = true;

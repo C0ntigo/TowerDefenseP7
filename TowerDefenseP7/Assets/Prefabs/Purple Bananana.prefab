@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5201502071406473451}
   - component: {fileID: 62201328221775643}
   - component: {fileID: 8844857754938866576}
-  - component: {fileID: 8942101479362467532}
+  - component: {fileID: -6265451320785235597}
+  - component: {fileID: 1546524299678850546}
   m_Layer: 0
   m_Name: Purple Bananana
   m_TagString: Untagged
@@ -101,7 +102,7 @@ MonoBehaviour:
   speed: 20
   damage: 1
   rb: {fileID: 2658497690723000015, guid: 4ad19008277ddde4fb1900d48ed493c2, type: 3}
---- !u!50 &8942101479362467532
+--- !u!50 &-6265451320785235597
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -122,3 +123,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1546524299678850546
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8585800170146756345}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00999999, y: 0.595}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.48387092, y: -0.4754098}
+    oldSize: {x: 0.62, y: 0.61}
+    newSize: {x: 0.62, y: 0.61}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.62, y: 0.61}
+  m_EdgeRadius: 0

@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5222381310797171503}
   - component: {fileID: 6416438390657167133}
   - component: {fileID: 8336569032404742455}
-  - component: {fileID: 2965776810518767668}
+  - component: {fileID: 1695144240908895346}
+  - component: {fileID: 6127271331649648094}
   m_Layer: 0
   m_Name: Blue Bananana
   m_TagString: Untagged
@@ -100,8 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   damage: 2
-  rb: {fileID: 2965776810518767668}
---- !u!50 &2965776810518767668
+  rb: {fileID: 0}
+--- !u!50 &1695144240908895346
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -122,3 +123,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &6127271331649648094
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177350352151537804}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00999999, y: 0.595}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.48387092, y: -0.4754098}
+    oldSize: {x: 0.62, y: 0.61}
+    newSize: {x: 0.62, y: 0.61}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.62, y: 0.61}
+  m_EdgeRadius: 0
