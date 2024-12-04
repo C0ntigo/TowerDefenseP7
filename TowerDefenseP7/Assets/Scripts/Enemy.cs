@@ -53,7 +53,6 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health < 0)
         {
-            Debug.Log("DoesThisWork");
             Die();
         }
     }
@@ -65,7 +64,6 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            Debug.Log("hurt");
             int damage = collision.gameObject.GetComponent<BulletV2>().damage;
             TakeDamage(damage);
 

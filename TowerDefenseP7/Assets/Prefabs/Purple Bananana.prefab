@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5201502071406473451}
   - component: {fileID: 62201328221775643}
-  - component: {fileID: 8844857754938866576}
   - component: {fileID: -6265451320785235597}
   - component: {fileID: 1546524299678850546}
+  - component: {fileID: -601227600482702504}
   m_Layer: 0
   m_Name: Purple Bananana
   m_TagString: Untagged
@@ -87,21 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8844857754938866576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8585800170146756345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04bcc252e98891f42b1da7d2c452f14b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  damage: 1
-  rb: {fileID: 2658497690723000015, guid: 4ad19008277ddde4fb1900d48ed493c2, type: 3}
 --- !u!50 &-6265451320785235597
 Rigidbody2D:
   serializedVersion: 4
@@ -149,3 +134,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.62, y: 0.61}
   m_EdgeRadius: 0
+--- !u!114 &-601227600482702504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8585800170146756345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04bcc252e98891f42b1da7d2c452f14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  damage: 5
+  rb: {fileID: -6265451320785235597}

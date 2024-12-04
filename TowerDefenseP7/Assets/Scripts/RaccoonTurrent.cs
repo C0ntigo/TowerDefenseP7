@@ -78,7 +78,7 @@ public class RaccoonTurrent : MonoBehaviour
     }
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.gray;
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
    
