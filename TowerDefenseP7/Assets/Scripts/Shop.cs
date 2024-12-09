@@ -1,28 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
-     
-    public TowerPlan RST;
-    public TowerPlan FST;
-    public TowerPlan IRT;
-    public TowerPlan LRT;
-    public TowerPlan PRT;
+    public int startMoney = 1;
+    public static int Money;
+    public int isRaccoonSold;
 
-   // BuildManager BM;
+    public TextMeshPro raccoonPrice;
+
+    public Button BuyButton;
 
      void Start()
     {
-      //  BM = BuildManager.instance;    
+        
+       Money = startMoney;
     }
-    public void PurchaseStandardTower ()
+     void Update()
     {
-        Debug.Log("Tommy Has been Purchased");
+        isRaccoonSold = PlayerPrefs.GetInt("IsRaccoonSold");
+        if (Money >= 2 && isRaccoonSold == 0)
+        {
+
+        }
     }
-    public void FireRaccoon ()
+    public void BuyRaccoon ()
     {
-        Debug.Log("Rocky has been Purchased");
+        Money -= 2;
+        PlayerPrefs.SetInt("IsRaccoonSold", 1);
     }
 }

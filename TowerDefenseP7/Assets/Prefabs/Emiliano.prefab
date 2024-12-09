@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1242934514137955223}
   - component: {fileID: 9202107053394695334}
   - component: {fileID: 1264624679780265093}
+  - component: {fileID: -4389143046898312184}
   m_Layer: 0
   m_Name: Emiliano
   m_TagString: Untagged
@@ -104,6 +105,18 @@ MonoBehaviour:
   enemyTag: Enemy
   bulletPrefab: {fileID: 6955007078346613021, guid: 0307aa2492431c04d97bff76e1ae8809, type: 3}
   firePoint: {fileID: 7196319388773774369}
+--- !u!114 &-4389143046898312184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6150531910671749244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8901f18b4d58d704aae040b9b659b92b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8398576698902080253
 GameObject:
   m_ObjectHideFlags: 0

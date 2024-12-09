@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 4650519815578198915}
   - component: {fileID: 6911128170213968520}
   - component: {fileID: 5759537440681251370}
+  - component: {fileID: -4617702283411849506}
   m_Layer: 0
   m_Name: James
   m_TagString: Untagged
@@ -105,7 +106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 4939767450672554942, guid: 230139ec57a89dd419de9fbfd0e67630, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -135,3 +136,15 @@ MonoBehaviour:
   enemyTag: Enemy
   bulletPrefab: {fileID: 8585800170146756345, guid: f7fcaabd3b1ca7b4e8c3d22ceca1bca2, type: 3}
   firePoint: {fileID: 2455542094880273671}
+--- !u!114 &-4617702283411849506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6881368536807683974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8901f18b4d58d704aae040b9b659b92b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

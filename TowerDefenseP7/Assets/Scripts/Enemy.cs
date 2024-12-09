@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health = 3;
+    public static int playerMoney = 1;
     public Rigidbody2D onionRB;
     public float speed = 5.0f;
     private Transform Target;
@@ -54,6 +55,7 @@ public class Enemy : MonoBehaviour
         if (health < 0)
         {
             Die();
+            Playerlives.Money = playerMoney += 1;
         }
     }
     void Die()
