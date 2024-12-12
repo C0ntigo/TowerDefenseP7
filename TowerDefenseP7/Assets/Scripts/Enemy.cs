@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour
     public Rigidbody2D onionRB;
     public float speed = 5.0f;
     private Transform Target;
-    public EnemyType enemyType;
     private int markerindex;
     public int damage = 25;
     // Start is called before the first frame update

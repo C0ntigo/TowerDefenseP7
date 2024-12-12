@@ -5,39 +5,24 @@ using UnityEngine;
 
 public class BuildManager : MonoBehaviour
 {
-    //public GameObject towerToBuild;
-   // public static BuildManager instance;
-  //  public GameObject Tom;
-   // public GameObject RST;
-  //  public TowerPlan FST;
-  //  public int cost;
-// TowerPlan TowerPlan;
+    [SerializeField] GameObject RaccoonPrefab;
+    [SerializeField] GameObject RaccoonPrefab1;
+    [SerializeField] GameObject RaccoonPrefab2;
+    [SerializeField] GameObject RaccoonPrefab3;
+    [SerializeField] GameObject RaccoonPrefab4;
 
+    void Start()
+    {
+            
+    }
 
-  //  void Start()
-   // {
-      //  towerToBuild = Tom;
-        
-        
-  //  }
-  //  public GameObject GetTowerToBuild ()
-  //  {
-   //     return towerToBuild;
-  //  }
-  //  public bool CanBuild {  get { return towerToBuild != null; } }
-    
-   // public void BuildTowerOn (Node node)
-  //  {
-    //    if (Playerlives.Money < towerToBuild.cost)
-    //    {
-
-    //    }
-    //    GameObject tower = (GameObject)Instantiate(towerToBuild.gameObject, node.GetBuildPosition(), Quaternion.identity);
-    //    node.tower = tower;
-   // }
-   // public void SetTowerToBuild (GameObject tower)
-   // {
-    //    towerToBuild = tower;
-   // }
-
+     void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            Vector2 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            GameObject g = Instantiate(RaccoonPrefab, (Vector2)spawnPosition, Quaternion.identity);
+             GameObject g1 = Instantiate(RaccoonPrefab1, (Vector2)spawnPosition, Quaternion.identity);
+        }    
+    }
 }

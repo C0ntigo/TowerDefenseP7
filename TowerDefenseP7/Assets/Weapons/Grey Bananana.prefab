@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6335272185686957100}
   - component: {fileID: 3525830566255915734}
-  - component: {fileID: -905757969128830541}
   - component: {fileID: 2658497690723000015}
   - component: {fileID: 1797897241}
+  - component: {fileID: -1469116520184988675}
   m_Layer: 0
   m_Name: Grey Bananana
   m_TagString: Bullet
@@ -87,21 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-905757969128830541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7520447956478739663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04bcc252e98891f42b1da7d2c452f14b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  damage: 2
-  rb: {fileID: 2658497690723000015}
 --- !u!50 &2658497690723000015
 Rigidbody2D:
   serializedVersion: 4
@@ -149,3 +134,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.62, y: 0.61}
   m_EdgeRadius: 0
+--- !u!114 &-1469116520184988675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7520447956478739663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04bcc252e98891f42b1da7d2c452f14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  damage: 2
+  rb: {fileID: 0}
