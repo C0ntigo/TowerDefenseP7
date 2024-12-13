@@ -1318,7 +1318,6 @@ GameObject:
   - component: {fileID: 458129337}
   - component: {fileID: 458129336}
   - component: {fileID: 458129339}
-  - component: {fileID: 458129340}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1463,19 +1462,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &458129340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458129335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e7ce7ea4fcaab4380ade36d45bbe57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RaccoonPrefab: {fileID: 2083560678887977551, guid: c71d5c6eb0318f34980263a41239c0c0, type: 3}
 --- !u!1 &463962862
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,6 +3066,117 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930131212}
   m_CullTransparentMesh: 1
+--- !u!1 &1017243125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1017243127}
+  - component: {fileID: 1017243126}
+  - component: {fileID: 1017243128}
+  - component: {fileID: 1017243131}
+  - component: {fileID: 1017243130}
+  - component: {fileID: 1017243129}
+  m_Layer: 0
+  m_Name: BuildManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1017243126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017243125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e7ce7ea4fcaab4380ade36d45bbe57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleButton: {fileID: 99572494}
+  prefabToInstantiate: {fileID: 2083560678887977551, guid: c71d5c6eb0318f34980263a41239c0c0, type: 3}
+  buttonText: {fileID: 805992937}
+--- !u!4 &1017243127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017243125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 964.9214, y: 649.8021, z: 0.7450448}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1017243128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017243125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e7ce7ea4fcaab4380ade36d45bbe57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleButton: {fileID: 1620228418}
+  prefabToInstantiate: {fileID: 837092421392736543, guid: ccd916a891d549944a85727db99804e9, type: 3}
+  buttonText: {fileID: 292848800}
+--- !u!114 &1017243129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017243125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e7ce7ea4fcaab4380ade36d45bbe57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleButton: {fileID: 463962864}
+  prefabToInstantiate: {fileID: 6150531910671749244, guid: 3aa5e9a0855eaec449dbbfb619c2a2d5, type: 3}
+  buttonText: {fileID: 850164060}
+--- !u!114 &1017243130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017243125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e7ce7ea4fcaab4380ade36d45bbe57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleButton: {fileID: 1333417416}
+  prefabToInstantiate: {fileID: 7481701322113457967, guid: 576668ecb121c5a49ac02db633de71c2, type: 3}
+  buttonText: {fileID: 516786670}
+--- !u!114 &1017243131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017243125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e7ce7ea4fcaab4380ade36d45bbe57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleButton: {fileID: 203525145}
+  prefabToInstantiate: {fileID: 6881368536807683974, guid: 86bfac18fce97f14a85c0829051598ad, type: 3}
+  buttonText: {fileID: 2119297242}
 --- !u!1 &1022150790
 GameObject:
   m_ObjectHideFlags: 0
